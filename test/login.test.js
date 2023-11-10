@@ -2,7 +2,7 @@ const fetch = require("node-fetch2");
 
 it("Should get a login token",async ()=>{
 
-    let token = "";//this is an emptry string
+    let token = "";//this is an empty string
     const options = {
         method:"POST",
         headers:{
