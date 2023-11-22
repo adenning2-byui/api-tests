@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sean-api
+  name: adam-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sean-api
+      app: adam-api
   template:
     metadata:
       labels:
-        app: sean-api
+        app: adam-api
     spec:
       containers:
-      - name: sean-api
+      - name: adam-api
         # This image is going to be the path to the image you create in a future step
         image: us-docker.pkg.dev/cit262-team-404421/adam-api/api-tests
         ports:
